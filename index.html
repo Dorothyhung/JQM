@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Homepage -->
+    <div data-role="page" id="home">
+        <div data-role="header" data-theme="b">
+            <h2>Home</h2>
+            <div data-role="navbar" data-theme="b">
+                <ul>
+                    <li><a href=#add data-transition="fade">Page 2</a></li>
+                    <li><a href=#subtract data-transition="fade">Page 3</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content" data-theme="e">
+            <h2>Content</h2>
+            <img src="images/image.jpg" alt="image" width="50px" height="60px">
+        </div>
+        <div data-role="footer" data-theme="b">
+            <h3>Copyright 2023 by Dorothy Hung</h3>
+        </div>
+    </div>
+
+
+    <!-- Add page -->
+    <div data-role="page" id="add">
+        <div data-role="header" data-theme="b">
+            <h2>Page 2</h2>
+            <div data-role="navbar" data-theme="b">
+                <ul>
+                    <li><a href=#home data-transition="fade">Home Page</a></li>
+                    <li><a href=#subtract data-transition="fade">Page 3</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content" data-theme="e">
+            <h2>Content</h2>
+            <input type="number" id="num1">
+            <input type="number" id="num2">
+            <button id="addButton" type="button">Button</button>
+            <input type="number" id="answer" readonly="true">
+        </div>
+        <div data-role="footer" data-theme="b">
+            <h3>Copyright 2023 by Dorothy Hung</h3>
+        </div>
+    </div>
+
+
+    <!-- Subtract Page -->
+    <div data-role="page" id="subtract">
+        <div data-role="header" data-theme="b">
+            <h2>Page 3</h2>
+            <div data-role="navbar" data-theme="b">
+                <ul>
+                    <li><a href=#home data-transition="fade">Home Page</a></li>
+                    <li><a href=#add data-transition="fade">Page 2</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content" data-theme="e">
+            <h2>Content</h2>
+            <input type="number" id="sub1">
+            <input type="number" id="sub2">
+            <button id="subButton" type="button">Button</button>
+            <input type="number" id="answer2" readonly="true">
+        </div>
+        <div data-role="footer" data-theme="b">
+            <h3>Copyright 2023 by Dorothy Hung</h3>
+        </div>
+    </div>
+</body>
+</html>
