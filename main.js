@@ -21,9 +21,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
         document.getElementById("artist").value = "";
         document.getElementById("album").value = "";
     })
-    
+
     this.getElementById("viewList").addEventListener("click", function() {
         document.getElementById("myList").innerHTML = "";
+        document.getElementById("added").value = '';
         list = document.getElementById("myList");
         for (i = 0; i < songList.length; i++) {
             let li = document.createElement("li");
