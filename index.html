@@ -18,13 +18,13 @@
             <h2>Home</h2>
             <div data-role="navbar" data-theme="b">
                 <ul>
-                    <li><a href=#add data-transition="fade">Page 2</a></li>
-                    <li><a href=#subtract data-transition="fade">Page 3</a></li>
+                    <li><a href=#page2 data-transition="fade">Add to Library</a></li>
+                    <li><a href=#page3 data-transition="fade">View Library</a></li>
                 </ul>
             </div>
         </div>
         <div data-role="content" data-theme="e">
-            <h2>Content</h2>
+            <h2>Welcome to Music Library</h2>
             <img src="images/image.jpg" alt="image" width="50px" height="60px">
         </div>
         <div data-role="footer" data-theme="b">
@@ -33,23 +33,27 @@
     </div>
 
 
-    <!-- Add page -->
-    <div data-role="page" id="add">
+    <!-- Add to Library -->
+    <div data-role="page" id="page2">
         <div data-role="header" data-theme="b">
-            <h2>Page 2</h2>
+            <h2>Add to Library</h2>
             <div data-role="navbar" data-theme="b">
                 <ul>
                     <li><a href=#home data-transition="fade">Home Page</a></li>
-                    <li><a href=#subtract data-transition="fade">Page 3</a></li>
+                    <li><a href=#page3 data-transition="fade">View Library</a></li>
                 </ul>
             </div>
         </div>
         <div data-role="content" data-theme="e">
             <h2>Content</h2>
-            <input type="number" id="num1">
-            <input type="number" id="num2">
-            <button id="addButton" type="button">Button</button>
-            <input type="number" id="answer" readonly="true">
+            <label type="songinfo" id="songlabel">Enter song name:</label>
+            <input type="text" id="songname">
+            <label type="songinfo" id="artistlabel">Enter artist name:</label>
+            <input type="text" id="artist">
+            <label type="songinfo" id="albumlabel">Enter album name:</label>
+            <input type="text" id="album">
+            <button id="add" type="button">Add to Library</button>
+            <input type="text" id="added" readonly="true">
         </div>
         <div data-role="footer" data-theme="b">
             <h3>Copyright 2023 by Dorothy Hung</h3>
@@ -57,27 +61,48 @@
     </div>
 
 
-    <!-- Subtract Page -->
-    <div data-role="page" id="subtract">
+    <!-- View Library -->
+    <div data-role="page" id="page3">
         <div data-role="header" data-theme="b">
             <h2>Page 3</h2>
             <div data-role="navbar" data-theme="b">
                 <ul>
                     <li><a href=#home data-transition="fade">Home Page</a></li>
-                    <li><a href=#add data-transition="fade">Page 2</a></li>
+                    <li><a href=#page2 data-transition="fade">Add to Library</a></li>
                 </ul>
             </div>
         </div>
         <div data-role="content" data-theme="e">
-            <h2>Content</h2>
-            <input type="number" id="sub1">
-            <input type="number" id="sub2">
-            <button id="subButton" type="button">Button</button>
-            <input type="number" id="answer2" readonly="true">
+            <h2>Your Music Library</h2>
+            <a href="#page4" id="viewList">View Added Songs</a>
+            
         </div>
         <div data-role="footer" data-theme="b">
             <h3>Copyright 2023 by Dorothy Hung</h3>
         </div>
     </div>
+
+
+    <!-- View songs -->
+    <div data-role="page" id="page4">
+        <div data-role="header" data-theme="b">
+            <h2>View Added Songs</h2>
+            <div data-role="navbar" data-theme="b">
+                <ul>
+                    <li><a href=#home data-transition="fade">Home Page</a></li>
+                    <li><a href=#page2 data-transition="fade">Add to Library</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="content" data-theme="e">
+            <h2>Your Music Library</h2>
+            <ul id="myList">My List</ul>
+            
+        </div>
+        <div data-role="footer" data-theme="b">
+            <h3>Copyright 2023 by Dorothy Hung</h3>
+        </div>
+    </div>
+
 </body>
 </html>
