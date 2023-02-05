@@ -1,0 +1,25 @@
+body {
+    background-color: purple;
+    text-align: center;
+    font-family: monospace, sans-serif;
+  }
+  h1 {
+    color: blue;
+    font-size: 36px;
+    margin-top: 50px;
+  }
+  img {
+    width: 70%;
+    height: auto;
+    margin-top: 1px;
+  }
+  p {
+    color: black;
+    font-size: 18px;
+    margin-top: 50px;
+  }
+
+  content {
+
+    background-image: "https://images5.alphacoders.com/919/919004.jpg";
+  }
