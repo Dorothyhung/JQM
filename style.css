@@ -13,13 +13,25 @@ body {
     height: auto;
     margin-top: 1px;
   }
+
   p {
     color: black;
     font-size: 18px;
     margin-top: 50px;
   }
 
-  content {
+  a:link, a:hover, a:active {
+    text-align: center;
+    font-family: monospace, sans-serif;
+    text-decoration: none;
+  }
 
+  #librarydiv {
+    width: 500px;
+    margin: auto;
+    
+  }
+
+  content {
     background-image: "https://images5.alphacoders.com/919/919004.jpg";
   }
